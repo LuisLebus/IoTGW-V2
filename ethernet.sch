@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 7950 4050 0    50   Input ~ 0
+GND
+Text GLabel 7950 3350 0    50   Input ~ 0
++3.3V
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F93FE77
+P 8150 3150
+AR Path="/5F93FE77" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CDF61/5F93FE77" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D241C/5F93FE77" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 8150 3000 50  0001 C CNN
+F 1 "+3.3V" H 8150 3300 50  0000 C CNN
+F 2 "" H 8150 3150 50  0000 C CNN
+F 3 "" H 8150 3150 50  0000 C CNN
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F93FE7D
+P 8150 4250
+AR Path="/5F93FE7D" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CDF61/5F93FE7D" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D241C/5F93FE7D" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 8150 4000 50  0001 C CNN
+F 1 "GND" H 8150 4100 50  0000 C CNN
+F 2 "" H 8150 4250 50  0000 C CNN
+F 3 "" H 8150 4250 50  0000 C CNN
+	1    8150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3350 8150 3350
+Wire Wire Line
+	8150 3350 8150 3150
+Wire Wire Line
+	7950 4050 8150 4050
+Wire Wire Line
+	8150 4050 8150 4250
+$Comp
+L Device:R R22
+U 1 1 5F6E5C97
+P 5950 3750
+F 0 "R22" H 6020 3796 50  0000 L CNN
+F 1 "4K7" H 6020 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 3750 50  0001 C CNN
+F 3 "~" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 3400 2    50   Input ~ 0
+ETH_POWER
+Text GLabel 4750 3600 2    50   Input ~ 0
+ETH_MDIO
+Text GLabel 4750 3700 2    50   Input ~ 0
+ETH_TXD0
+Text GLabel 2850 3300 0    50   Input ~ 0
+ETH_DV
+Text GLabel 4750 3900 2    50   Input ~ 0
+ETH_TX_EN
+Text GLabel 4750 4200 2    50   Input ~ 0
+ETH_TXD1
+Text GLabel 4750 4300 2    50   Input ~ 0
+ETH_MDC
+Text GLabel 2850 3600 0    50   Input ~ 0
+ETH_RXD0
+Text GLabel 2850 3500 0    50   Input ~ 0
+ETH_RXD1
+Text GLabel 2850 3400 0    50   Input ~ 0
+ETH_CRS
+Text GLabel 4750 3100 2    50   Input ~ 0
+ETH_CLK
+Wire Wire Line
+	4350 3100 4750 3100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F718A8E
+P 2950 4300
+AR Path="/5F718A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CDF61/5F718A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D241C/5F718A8E" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 2950 4150 50  0001 C CNN
+F 1 "+3.3V" H 2950 4450 50  0000 C CNN
+F 2 "" H 2950 4300 50  0000 C CNN
+F 3 "" H 2950 4300 50  0000 C CNN
+	1    2950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F718DE6
+P 5450 4550
+AR Path="/5F718DE6" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CDF61/5F718DE6" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D241C/5F718DE6" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 5450 4300 50  0001 C CNN
+F 1 "GND" H 5450 4400 50  0000 C CNN
+F 2 "" H 5450 4550 50  0000 C CNN
+F 3 "" H 5450 4550 50  0000 C CNN
+	1    5450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3800 5450 3800
+Wire Wire Line
+	4350 4400 5450 4400
+Wire Wire Line
+	5450 4400 5450 4550
+Wire Wire Line
+	4350 3600 4750 3600
+Wire Wire Line
+	4750 3700 4350 3700
+Wire Wire Line
+	4350 3900 4750 3900
+Wire Wire Line
+	4750 4200 4350 4200
+Wire Wire Line
+	4350 4300 4750 4300
+Wire Wire Line
+	2850 3400 3250 3400
+Wire Wire Line
+	3250 3500 2850 3500
+Wire Wire Line
+	2850 3600 3250 3600
+Wire Wire Line
+	3250 4400 2950 4400
+Wire Wire Line
+	2950 4400 2950 4300
+$Comp
+L Connector_Generic:Conn_01x20 J5
+U 1 1 5F6E8164
+P 4150 3500
+F 0 "J5" H 4150 4650 50  0000 C CNN
+F 1 "ETH" H 4100 4550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 4150 3500 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F86DA0E
+P 5450 4000
+AR Path="/5F86DA0E" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CDF61/5F86DA0E" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D241C/5F86DA0E" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 5450 3750 50  0001 C CNN
+F 1 "GND" H 5450 3850 50  0000 C CNN
+F 2 "" H 5450 4000 50  0000 C CNN
+F 3 "" H 5450 4000 50  0000 C CNN
+	1    5450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F86E20A
+P 5950 4000
+AR Path="/5F86E20A" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CDF61/5F86E20A" Ref="#PWR?"  Part="1" 
+AR Path="/5F7D241C/5F86E20A" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 5950 3750 50  0001 C CNN
+F 1 "GND" H 5950 3850 50  0000 C CNN
+F 2 "" H 5950 4000 50  0000 C CNN
+F 3 "" H 5950 4000 50  0000 C CNN
+	1    5950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3400 4600 3400
+Wire Wire Line
+	5450 3800 5450 4000
+Wire Wire Line
+	5950 3900 5950 4000
+Wire Wire Line
+	4600 3400 4600 3500
+Wire Wire Line
+	4600 3500 5950 3500
+Wire Wire Line
+	5950 3500 5950 3600
+Connection ~ 4600 3400
+Wire Wire Line
+	4600 3400 4750 3400
+NoConn ~ 3250 2600
+NoConn ~ 3250 2700
+NoConn ~ 3250 2800
+NoConn ~ 3250 2900
+NoConn ~ 3250 3000
+NoConn ~ 3250 3100
+NoConn ~ 3250 3200
+NoConn ~ 4350 2600
+NoConn ~ 4350 2700
+NoConn ~ 4350 2800
+NoConn ~ 4350 2900
+NoConn ~ 4350 3000
+NoConn ~ 4350 3200
+NoConn ~ 4350 3300
+NoConn ~ 4350 3500
+NoConn ~ 4350 4000
+NoConn ~ 4350 4100
+NoConn ~ 4350 4500
+NoConn ~ 3250 4500
+NoConn ~ 3250 4300
+NoConn ~ 3250 4200
+NoConn ~ 3250 4100
+NoConn ~ 3250 4000
+NoConn ~ 3250 3900
+NoConn ~ 3250 3800
+NoConn ~ 3250 3700
+Wire Wire Line
+	2850 3300 3250 3300
+$Comp
+L Connector_Generic:Conn_01x20 J4
+U 1 1 5F6E6A52
+P 3450 3500
+F 0 "J4" H 3450 4650 50  0000 L CNN
+F 1 "ETH" H 3250 4550 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 3450 3500 50  0001 C CNN
+F 3 "~" H 3450 3500 50  0001 C CNN
+	1    3450 3500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
